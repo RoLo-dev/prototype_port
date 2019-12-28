@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+.pic{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.basic-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* It get rid off the bullet points */
+ul li{
+    list-style: none;
+}
+
+/* header */
+header{
+    padding: 1rem 0;
+}
+.logo{
+    width: 13%;
+}
+.navlinks ul li{
+    display: inline-block;
+    margin-right: 4rem;
+}
+.navlinks ul li:last-child{
+    margin-right: 0;
+}
+.navlinks ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    border: 2px solid transparent;
+    padding: 5px 10px;
+    transition: all 0.8s ease-out;
+}
+.navlinks ul li a:hover{
+    border-color: #000;
+    transition: all 0.3s ease-in;
+}
+
+/* banner */
+#banner{
+    background-color: #000;
+    height: 70vh;
+    margin-bottom: 5rem;
+}
+.banner-text{
+    color: #fff;
+    font-weight: 700;
+    font-size: 8rem;
+    line-height: 0.9;
+    position: relative;
+    top: 7%;
+}
+.quotes{
+    font-size: 2rem;
+}
+#quote2{
+    position: absolute;
+    top: 29rem;
+    left: 23rem;
+}
+
+/* About */
+#about{
+    margin-bottom: 5rem;
+}
+.col2{
+    width: 30%;
+}
+.col2 img{
+    width: 80%;
+    margin: 0 1rem;
+    padding: 25px 25px 75px 25px;
+    box-shadow: 5px 5px 7px rgb(100, 100, 100);
+}
