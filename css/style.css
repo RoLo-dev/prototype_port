@@ -118,9 +118,10 @@ header{
 
 /* Projects */
 #projects{
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 .grid{
+    margin-top: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -151,5 +152,59 @@ header{
 }
 .project-title a:hover{
     color: #636569;
+    transition: all 0.3s;
+}
+.languages{
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Contact */
+#contact{
+    margin-bottom: 5rem;
+}
+.form-content{
+    width: 50%;
+}
+.other-info{
+    width: 45%;
+}
+.form-content p{
+    margin-bottom: 1rem;
+}
+form>*{
+    margin-bottom: 1rem;
+}
+form input{
+    height: 2rem;
+    font-size: 0.9rem;
+    border: 0;
+    border-bottom: 2px solid #a7a8a9;
+    padding: 5px 0 0 5px;
+}
+form textarea{
+    height: 7rem;
+    font-size: 0.9rem;
+    border: 2px solid #a7a8a9;
+    padding: 5px 0 0 5px;
+}
+form input::placeholder,
+form textarea::placeholder{
+    color: #a7a8a9;
+}
+.submit-btn{
+    width: 30%;
+    height: 2rem;
+    display: block;
+    outline: 0;
+    cursor: pointer;
+    border: 2px solid #a7a8a9;
+    color: #a7a8a9;
+    font-weight: 700;
+    transition: all 0.7s;
+}
+.submit-btn:hover{
+    color: #fff;
+    background-color: #a7a8a9;
     transition: all 0.3s;
 }
