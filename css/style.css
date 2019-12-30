@@ -63,15 +63,20 @@ header{
 .logo{
     width: 13%;
 }
-.navlinks ul li{
+.navlinks ul li,
+.footerlinks ul li{
     display: inline-block;
     margin-right: 4rem;
 }
-.navlinks ul li:last-child{
+.navlinks ul li:last-child,
+.footerlinks ul li:last-child{
     margin-right: 0;
 }
 .navlinks ul li a{
     color: #a7a8a9;
+}
+.navlinks ul li a,
+.footerlinks ul li a{
     font-weight: 700;
     border: 2px solid transparent;
     padding: 5px 10px;
@@ -221,4 +226,33 @@ form textarea::placeholder{
     border-color: #636569;
     background-color: #636569;
     transition: all 0.3s;
+}
+
+/* footer */
+footer{
+    background-color: #636569;
+    padding: 2rem 0;
+}
+.social-icons ul li{
+    display: inline-block;
+}
+.social-icons ul li:first-child{
+    margin-right: 1.5rem;
+}
+.social-icons a{
+    font-size: 2.5rem;
+    color: #fff;
+    transition: all 0.7s;
+}
+.social-icons a:hover{
+    color: #a7a8a9;
+    transition: all 0.3s;
+}
+.footerlinks ul li a{
+    color: #fff;
+}
+.footerlinks ul li a:hover{
+    border-color: #a7a8a9;
+    color: #a7a8a9;
+    transition: all 0.3s ease-in;
 }
