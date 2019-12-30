@@ -181,30 +181,44 @@ form input{
     border: 0;
     border-bottom: 2px solid #a7a8a9;
     padding: 5px 0 0 5px;
+    transition: all 0.7s;
 }
 form textarea{
     height: 7rem;
     font-size: 0.9rem;
     border: 2px solid #a7a8a9;
     padding: 5px 0 0 5px;
+    transition: all 0.7s;
+}
+form input:hover,
+form textarea:hover{
+    border-color: #636569;
+    transition: all 0.3s;
+}
+form input:hover::placeholder,
+form textarea:hover::placeholder{
+    color: #636569;
+    transition: all 0.3s;
 }
 form input::placeholder,
 form textarea::placeholder{
     color: #a7a8a9;
+    transition: all 0.7s;
 }
 .submit-btn{
     width: 30%;
-    height: 2rem;
-    display: block;
+    padding: 0;
     outline: 0;
     cursor: pointer;
     border: 2px solid #a7a8a9;
     color: #a7a8a9;
     font-weight: 700;
+    letter-spacing: 0.85px;
     transition: all 0.7s;
 }
 .submit-btn:hover{
     color: #fff;
-    background-color: #a7a8a9;
+    border-color: #636569;
+    background-color: #636569;
     transition: all 0.3s;
 }
