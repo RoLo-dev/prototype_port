@@ -6,6 +6,7 @@
 html{
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 .dark-gray{
     color: #636569;
@@ -58,7 +59,11 @@ ul li{
 
 /* header */
 header{
+    width: 100%;
     padding: 1rem 0;
+    position: relative;
+    top: 0;
+    z-index: 2;
 }
 .logo{
     width: 13%;
@@ -72,8 +77,9 @@ header{
 .footerlinks ul li:last-child{
     margin-right: 0;
 }
-.navlinks ul li a{
-    color: #a7a8a9;
+.navlinks ul li a,
+.footerlinks ul li a{
+    color: #fff;
 }
 .navlinks ul li a,
 .footerlinks ul li a{
@@ -90,17 +96,37 @@ header{
 
 /* banner */
 #banner{
-    background-color: #636569;
-    height: 70vh;
+    background-color: #000;
+    height: 100vh;
     margin-bottom: 5rem;
+    z-index: -7;
 }
 .banner-text{
+    width: 29%;
     color: #fff;
     font-weight: 700;
-    font-size: 5rem;
+    font-size: 4.75rem;
     line-height: 1.1;
     position: relative;
-    top: 30%;
+    /* top: 27%; (this will keep it in the middle of the banner) */
+    top: 8%;
+    left: 5%;
+    z-index: 7;
+}
+.square{
+    position: absolute;
+    height: 50%;
+    width: 30%;
+}
+#square-one{
+    background-color: #636569;
+    top: 0;
+    right: 30%;
+}
+#square-two{
+    background-color: #a7a8a9;
+    bottom: 0;
+    right: 0;
 }
 
 /* About */
@@ -216,6 +242,7 @@ form textarea::placeholder{
     outline: 0;
     cursor: pointer;
     border: 2px solid #a7a8a9;
+    background-color: transparent;
     color: #a7a8a9;
     font-weight: 700;
     letter-spacing: 0.85px;
@@ -247,9 +274,6 @@ footer{
 .social-icons a:hover{
     color: #a7a8a9;
     transition: all 0.3s;
-}
-.footerlinks ul li a{
-    color: #fff;
 }
 .footerlinks ul li a:hover{
     border-color: #a7a8a9;
