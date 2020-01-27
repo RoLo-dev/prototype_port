@@ -64,8 +64,9 @@ ul li{
 header{
     width: 100%;
     padding: 1rem 0;
-    position: relative;
+    position: absolute;
     top: 0;
+    left: 0;
     z-index: 2;
 }
 .logo{
@@ -109,23 +110,22 @@ header{
     position: absolute;
     top: 37%;
     left: 35%;
-    z-index: 7;
 }
 .banner-text p{
-    width: 40%;
+    /* width: 40%; */
     white-space: nowrap;
     border-right: 2px solid #a7a8a9;
     overflow: hidden;transform: translate(-50%);
 }
 .anim-typewriter{
-    animation: typewriter 5s steps(40) 1s 1 normal both,
+    animation: typewriter 3s steps(40) 1s 1 normal both,
     blinkTextCursor 500ms steps(40) 40s 1 normal;
 }
 .line2{
-    animation-delay: 6s;
+    animation-delay: 4s;
 }
-.line3{
-    animation-delay: 11s;
+.banner-text .line3{
+    animation-delay: 7s;
 }
 @keyframes typewriter{
     0%{
@@ -280,16 +280,16 @@ form textarea::placeholder{
     outline: 0;
     cursor: pointer;
     border: 2px solid #a7a8a9;
-    background-color: transparent;
-    color: #a7a8a9;
+    background-color: #a7a8a9;
+    color: #272B35;
     font-weight: 700;
     letter-spacing: 0.85px;
     transition: all 0.7s;
 }
 .submit-btn:hover{
-    color: #272B35;
+    color: #a7a8a9;
     border-color: #636569;
-    background-color: #636569;
+    background-color: transparent;
     transition: all 0.3s;
 }
 
